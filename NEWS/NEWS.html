@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الاخبار</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://scontent.fmed1-2.fna.fbcdn.net/v/t39.30808-6/456403282_122100353954485590_6567486836681529775_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dIzAjExNhhEQ7kNvgGHdhpf&_nc_zt=23&_nc_ht=scontent.fmed1-2.fna&_nc_gid=ACGVsvlpIsHML8YNxXKJqpe&oh=00_AYDyDPY0JsYJeZnbT40xOOKfXEzyt7UHXLfh4sQGwQetfg&oe=6717131A"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+
+    <header class="header topnav">
+      <nav>
+        <a href="../Home page.html"><img class="logo" src="الشعار.png" alt="شعار المدرسة" /></a>
+        
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-list">
+          <li><a href="../Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+          <li><a href="#top">الاخبار</a></li>
+          <li><a href="../Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+              <select onchange="redirectToLink(this)">
+                <option value="EG" selected hidden>المسار الصري</option>
+                <option value="../EG News/EG News.html">الاخبار</option>
+                <option value="../EG Staff/EG Staff.html">المعلمين</option>
+          </select>
+        </ul>
+    
+        <!-- Hamburger icon (only visible on mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <!-- Mobile Navigation Menu (only visible on mobile) -->
+        <ul class="nav-list" id="mobile-menu">
+          <li><a href="../Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+          <li><a href="#top">الاخبار</a></li>
+          <li><a href="../Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+              <select onchange="redirectToLink(this)">
+                <option value="EG" selected hidden>المسار الصري</option>
+                <option value="../EG News/EG News.html">الاخبار</option>
+                <option value="../EG Staff/EG Staff.html">المعلمين</option>
+          </select>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="news-container">
+      <div class="news-item">
+        <div class="news-content">
+          <h1>رحله لنادي احد</h1>
+          <br />
+          <p>
+            ذهبت الحافلات الخاصه بمداس الابرار لرحله لنادي احد وكان هناك 20 طابا
+            واكنت العمليات التفاعليه هناك نشطه جدا واستمتع الطلاب جدا واراو
+            الملعب والسبح واشياء اخرا ورجعت الحافلات للمدرسه
+          </p>
+        </div>
+        <div
+          class="news-image"
+          style="background-image: url('photos/photo\ \(1\).JPG')"
+        ></div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-content">
+          <h1>فعاليات اليوم الوطني</h1>
+          <br />
+          <p>
+            تم تنظيم فعاليات اليوم الوطني في مدارس الابرار وتم تنظيم مسابقات 
+
+          </p>
+        </div>
+        <div
+          class="news-image"
+          style="background-image: url('photos/photo\ \(2\).JPG')"
+        ></div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-content">
+          <h1>عرض اليوم الوطني</h1>
+          <br />
+          <p>
+            ذهبت الحافلات الخاصه بمداس الابرار لرحله لنادي احد وكان هناك 20 طابا
+            واكنت العمليات التفاعليه هناك نشطه جدا واستمتع الطلاب جدا واراو
+            الملعب والسبح واشياء اخرا ورجعت الحافلات للمدرسه
+          </p>
+        </div>
+        <div
+          class="news-image"
+          style="background-image: url('photos/photo\ \(3\).JPG')"
+        ></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fas fa-phone"></i> 0123456789</li>
+            <li><i class="fas fa-envelope"></i> info@aliabraar.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> عنوان المدرسة</li>
+            <li><i class="fas fa-user-circle"></i>تصميم الطالب محمود شمس</li>
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linktr.ee/Abrarschools">مواقع التواصل الخاصه بنا</a>
+          <br /><br />
+          <a href="#">تواصل معنا</a>
+          <br />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>مدارس الابرار</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="materyaaal/الشعار.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="x"></div>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="materyaaal/photo1.jpg" style="width:100%">
+            <div class="text">              <h1>مدارس الابرار الاهليه الحديثه ترحب بكم</h1> <p>نسعى لبناء جيل يبني الوطن.</p></div>
+          </div>
+          <div class="mySlides fade">
+            <img src="materyaaal/photo2.jpg" style="width:100%">
+            <div class="text">              <h1>مدارس الابرار الاهليه الحديثه ترحب بكم</h1> <p>نسعى لبناء جيل يبني الوطن.</p></div>
+          </div>
+          <div class="mySlides fade">
+            <img src="materyaaal/photo3.jpg" style="width:100%">
+            <div class="text">              <h1>مدارس الابرار الاهليه الحديثه ترحب بكم</h1> <p>نسعى لبناء جيل يبني الوطن.</p></div>
+          </div>
+    
+        </div>
+
+    </section>
+    <header class="sticky-header topnav">
+      <nav>
+        <a href="#top"><img class="logo" src="materyaaal/الشعار.png" alt="شعار المدرسة" /></a>
+        
+
+        <ul class="nav-list">
+          <li><a href="Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+          <li><a href="NEWS/NEWS.html">الاخبار</a></li>
+          <li><a href="Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+          <select onchange="redirectToLink(this)">
+            <option value="EG" selected hidden>المسار الصري</option>
+            <option value="EG News/EG News.html">الاخبار</option>
+            <option value="EG Staff/EG Staff.html">المعلمين</option>
+          </select>
+        </ul>
+    
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <ul class="nav-list" id="mobile-menu">
+          <li><a href="Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+          <li><a href="NEWS/NEWS.html">الاخبار</a></li>
+          <li><a href="Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+          <select onchange="redirectToLink(this)">
+            <option value="EG" selected hidden>المسار الصري</option>
+            <option value="EG News/EG News.html">الاخبار</option>
+            <option value="EG Staff/EG Staff.html">المعلمين</option>
+          </select>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="about"></div>
+      <section class="about">
+        <div class="about-content">
+          <h2>نبذة عن المدرسة</h2>
+          <p>
+            مدارس الابرار تأسست عام 1419 هـ وتعمل على تنشئة جيل مثقف ومتعلم وفق
+            أحدث الوسائل والنظم التعليمية مع المحافظة على القيم والمبادئ
+            الإسلامية.
+          </p>
+          <a href="the BOSS/the BOSS.html" class="btn">كلمة المدير</a>
+        </div>
+        <br>
+        <div class="about-image">
+          <img src="materyaaal/مدير المدرسه.jpg"  alt="عن المدرسة" />
+            <pre>
+          سعادة مدير المدرسة 
+           أ.عبدالله الكويتي
+          </pre>
+
+        </div>
+
+      </section>
+      <div id="programs"></div>
+      <section class="programs">
+        <h2>برامجنا التعليمية</h2>
+        <div class="program-cards">
+          <div class="program-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>البرنامج الثقافي</h3>
+            <P>تضم مدارس الابرار برنامج ثقافي عالمي يساعد الطالب على تنمية الفكر</P>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-users"></i>
+            <h3>مجلس الطلبة</h3>
+            <p>المجلس المسؤول عن تنظيم الأنشطة والفعاليات الطلابية.</p>
+            <a href="Student Council/Student Council.html" class="mor">تعرف على المزيد</a>
+
+          </div>
+          <div class="program-card">
+            <i class="fas fa-theater-masks"></i>
+            <h3>البرنامج الترفيهي</h3>
+            <P>تهتم مدارس الابرار جدا بترفيه الطلاب ومتعتهم داخل المدرسه بحيث لا يملو في منصف اليوم الدراسي</P>
+          </div>
+        </div>
+      </section>
+
+      <br><br>
+
+      <section class="vision-mission">
+        <div class="vision">
+          <h3>رؤيتنا</h3>
+          <p>طلاب الحاضر هم بناة المستقبل</p>
+        </div>
+        <div class="mission">
+          <h3>رسالتنا</h3>
+          <p>تربيه ... تعليم ... عمل</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fas fa-phone"></i> 0123456789</li>
+            <li><i class="fas fa-envelope"></i> info@aliabraar.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> عنوان المدرسة</li>
+            <li><i class="fas fa-user-circle"></i>تصميم الطالب محمود محمد شمس</li>
+
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linktr.ee/Abrarschools">مواقع التواصل الخاصه بنا</a>
+          <br><br>
+          <a href="#">تواصل معنا</a>
+          <br>
+
+        </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/35fbef037d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

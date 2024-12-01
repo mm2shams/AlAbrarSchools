@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060e0a;
+  color: #eaf6ef;
+}
+
+*{
+  font-family: "Tajawal", sans-serif;
+  scroll-behavior: smooth;
+  font-size: large;
+
+}
+
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.news-item {
+  margin: 10px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  background-color:#071b11;
+}
+.news-image {
+  width: 40%;
+  height: 300px;
+  background-color: #eaeaea;
+}
+
+.news-image {
+
+  background-color: #eaeaea;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news-content {
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 0;
+  font-size: xx-large;
+}
+p {
+  margin-top: 5px;
+}
+
+
+
+
+/* Header Styles */
+header {
+  background-color: hsl(147, 49%, 21%);
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin: -15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  object-fit: cover;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li ,select {
+  margin-left: 20px;
+}
+
+nav ul li a , select {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color:  hsl(147, 49%, 21%);
+  border: none;
+}
+
+nav ul li a:hover , select:hover{
+  color: #cfcfcf;
+}
+
+/**/
+
+/* Styles for the hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #cfcfcf;
+  margin: 3px 0;
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+  display: none; 
+  flex-direction: column;
+  position: absolute;
+  background-color: hsl(147, 49%, 21%); 
+  width: 100%;
+  top: 45px;
+  left: 0;
+  color: #fff; 
+  text-align: center;
+  align-items: center;
+}
+
+#mobile-menu li, #mobile-menu select {
+  margin: 7px;
+}
+
+
+#mobile-menu.active {
+  display: flex;
+}
+
+/* Media query to show hamburger icon on mobile and hide desktop menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; 
+  }
+  .nav-list {
+    display: none; 
+  }
+}
+
+/* Media query to show desktop menu on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; 
+  }
+  .nav-list {
+    display: flex; 
+  }
+}
+
+/*************/
+
+
+/* Footer Styles */
+footer {
+  background-color: hsl(147, 49%, 21%);
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info,
+.social-links {
+  width: 50%;
+  align-items: center;
+}
+
+.contact-info h3,
+.contact-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  margin-left: 10px;
+}
+
+.social-links a {
+  color: #a5c9ca;
+  text-decoration: none;
+  font-size: large;
+  transition: 1s;
+  font-weight: bold;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #839e9f;
+  font-size: x-large;
+}
+/***************/
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color:hsl(0, 0%, 0%);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color:hsl(147, 49%, 21%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:hsl(147, 49%, 21%);
+}

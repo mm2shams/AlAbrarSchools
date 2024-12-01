@@ -1,0 +1,550 @@
+/* Global Styles */
+* {
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+  font-size: large;
+  
+}
+
+body {
+  margin: 0;
+  background-color: #060e0a;
+  color: #eaf6ef;
+  direction: rtl;
+}
+
+/* Header Styles */
+header {
+  background-color: hsl(147, 49%, 21%);
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Sticky Header Styles */
+header.sticky {
+  background-color: hsl(147, 49%, 21%);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin: -15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  object-fit: cover;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li ,select {
+  margin-left: 20px;
+}
+
+nav ul li a , select {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color:  hsl(147, 49%, 21%);
+  border: none;
+}
+
+nav ul li a:hover , select:hover{
+  color: #cfcfcf;
+}
+
+/**/
+
+/* Styles for the hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #cfcfcf;
+  margin: 3px 0;
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+  display: none; 
+  flex-direction: column;
+  position: absolute;
+  background-color: hsl(147, 49%, 21%); 
+  width: 100%;
+  top: 60px; 
+  left: 0;
+  color: #fff; 
+  text-align: center;
+  align-items: center;
+}
+
+#mobile-menu li, #mobile-menu select {
+  margin: 7px;
+}
+
+#mobile-menu.sticky {
+  top: 45px;
+}
+
+
+#mobile-menu.active {
+  display: flex;
+}
+
+/* Media query to show hamburger icon on mobile and hide desktop menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; 
+  }
+  .nav-list {
+    display: none; 
+  }
+}
+
+/* Media query to show desktop menu on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; 
+  }
+  .nav-list {
+    display: flex; 
+  }
+}
+
+/*************/
+
+/******/
+
+.hero {
+  height: 500px;
+  background-color: hsl(147, 49%, 21%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+    1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+.hero-content {
+  flex: 1;
+  text-align: center;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Main Content Styles */
+
+main {
+  padding: 60px;
+}
+
+#about {
+  position: relative;
+  top: -100px;
+}
+
+.about-content .btn {
+  display: inline-block;
+  background-color: hsl(147, 49%, 21%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition:color 0.3s ease;
+}
+
+.about-content .btn:hover {
+  background-color: hsl(147, 49%, 21%);
+  color: #cfcfcf;
+
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.about-image {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+.about-image pre {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.programs {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#programs {
+  position: relative;
+  top: -100px;
+}
+
+.programs h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.program-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.program-card {
+  width: 300px;
+  background-color: #071b11;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+.program-card i {
+  font-size: 36px;
+  color: hsl(147, 49%, 21%);
+  margin-bottom: 20px;
+}
+
+.program-card .mor {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.7;
+  position: absolute;
+  left: 51%;
+  padding: 0px 15px 15px 15px;
+  font-size: medium;
+}
+
+
+.program-card .mor:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+
+
+
+.program-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.program-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.vision-mission {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.vision,
+.mission {
+  width: 48%;
+  background-color: #071b11;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.vision h3,
+.mission h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.vision p,
+.mission p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+  background-color: hsl(147, 49%, 21%);
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info,
+.social-links {
+  width: 50%;
+  align-items: center;
+}
+
+.contact-info h3,
+.contact-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  margin-left: 10px;
+}
+
+.social-links a {
+  color: #a5c9ca;
+  text-decoration: none;
+  font-size: large;
+  transition: 1s;
+  font-weight: bold;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #839e9f;
+  font-size: x-large;
+}
+
+/********/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  max-height: 500px;
+}
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-height: 500px;
+  width: 100%;
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/***************/
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 0%);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: hsl(147, 49%, 21%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: hsl(147, 49%, 21%);
+}
+
+/***********************/
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-content,
+  .about-image {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .program-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+  }
+
+  .vision,
+  .mission {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .social-links {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about h2,
+  .programs h2 {
+    font-size: 24px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+
+  .vision h3,
+  .mission h3 {
+    font-size: 20px;
+  }
+
+}
