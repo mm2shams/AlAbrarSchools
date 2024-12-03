@@ -369,6 +369,7 @@ footer {
   padding: 0;
 }
 
+
 .contact-info li {
   margin-bottom: 10px;
 }
@@ -377,7 +378,7 @@ footer {
   margin-left: 10px;
 }
 
-.social-links a {
+.social-links a, .aaa {
   color: #a5c9ca;
   text-decoration: none;
   font-size: large;
