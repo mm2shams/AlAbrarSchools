@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المجلس الطلابي</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+rel="stylesheet"
+/>
+<link
+  rel="shortcut icon"
+  href="https://scontent.fmed1-2.fna.fbcdn.net/v/t39.30808-6/456403282_122100353954485590_6567486836681529775_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dIzAjExNhhEQ7kNvgGHdhpf&_nc_zt=23&_nc_ht=scontent.fmed1-2.fna&_nc_gid=ACGVsvlpIsHML8YNxXKJqpe&oh=00_AYDyDPY0JsYJeZnbT40xOOKfXEzyt7UHXLfh4sQGwQetfg&oe=6717131A"
+  type="image/x-icon"
+/>
+</head>
+
+<body>
+
+
+  <header class="header topnav">
+    <nav>
+      <a href="../Home page.html"><img class="logo" src="الشعار.png" alt="شعار المدرسة" /></a>
+      
+      <ul class="nav-list">
+        <li><a href="../Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+        <li><a href="../NEWS/NEWS.html">الاخبار</a></li>
+        <li><a href="../Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+            <select onchange="redirectToLink(this)">
+              <option value="EG" selected hidden>المسار الصري</option>
+              <option value="../EG News/EG News.html">الاخبار</option>
+              <option value="../EG Staff/EG Staff.html">المعلمين</option>
+        </select>
+      </ul>
+  
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  
+      <ul class="nav-list" id="mobile-menu">
+        <li><a href="../Staff/Staff.html">الهيكل الاداري والمعلمين</a></li>
+        <li><a href="../NEWS/NEWS.html">الاخبار</a></li>
+        <li><a href="../Photo gallery/Photo gallery.html">الصور والفديوهات</a></li>
+            <select onchange="redirectToLink(this)">
+              <option value="EG" selected hidden>المسار الصري</option>
+              <option value="../EG News/EG News.html">الاخبار</option>
+              <option value="../EG Staff/EG Staff.html">المعلمين</option>
+        </select>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>المجلس الطلابي</h1>
+      <p>نتطلع لتحقيق طموحاتنا معًا، فكل عضو في المجلس يمثل حجر أساس في المستقبل.</p>
+    </div>
+  </section>
+
+  <!-- أعضاء المجلس -->
+  <main>
+    <section id="about">
+      <div class="about">
+        <div class="about-content">
+          <h2>أعضاء المجلس الطلابي</h2>
+          <p>هؤلاء هم الأعضاء الذين يعملون جاهدين لتحقيق رؤية المجلس، من خلال تقديم أفكار جديدة وتعزيز التعاون والإبداع.</p>
+        </div>
+        <div class="about-image">
+          <div class="members">
+            <!-- أعضاء المجلس -->
+            <div class="member">
+              <img src="photo/احمد محمد نظير.jpg" alt="رئيس المجلس" class="member-img">
+              <h3>أحمد نظير</h3>
+              <p>رئيس المجلس</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="نائب الرئيس 1" class="member-img">
+              <h3>حاتم جمال علي</h3>
+              <p>نائب الرئيس 1</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="نائب الرئيس 2" class="member-img">
+              <h3>عبد الرحمن دخيل الله</h3>
+              <p>نائب الرئيس 2</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="أمين عام المجلس" class="member-img">
+              <h3>كريم وائل كمال</h3>
+              <p>أمين عام المجلس</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="عضو" class="member-img">
+              <h3>محمود محمد شمس</h3>
+              <p>عضو</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="عضو" class="member-img">
+              <h3>عضو</h3>
+              <p>عضو</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="عضو" class="member-img">
+              <h3>عضو</h3>
+              <p>عضو</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="عضو" class="member-img">
+              <h3>عضو</h3>
+              <p>عضو</p>
+            </div>
+            <div class="member">
+              <img src="photo/noo.jpg" alt="عضو" class="member-img">
+              <h3>عضو</h3>
+              <p>عضو</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- أهداف المجلس -->
+    <section id="goals">
+      <div class="about">
+        <div class="about-content">
+          <h2>أهداف المجلس</h2>
+          <p>نحن هنا لنكون جزءًا من التغيير الإيجابي، ونسعى لتحقيق أهداف نبيلة تهدف إلى تعزيز الوعي المجتمعي والشخصي.</p>
+          <ul>
+            <li>العمل على تعزيز روح التعاون والشراكة بين الأعضاء لتحقيق الرؤى المشتركة.</li>
+            <li>تنظيم فعاليات وحملات تهدف إلى نشر الوعي المجتمعي بأهمية المشاركة الفاعلة.</li>
+            <li>دعم الأعضاء في تطوير مهارات القيادة والعمل الجماعي.</li>
+            <li>تشجيع المبادرات الإبداعية التي تساهم في تحسين المجتمع بشكل عام.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- إنجازات المجلس -->
+    <section id="achievements">
+      <div class="about">
+        <div class="about-content">
+          <h2>إنجازات المجلس</h2>
+          <p>لقد تحققنا من خلال العمل الجماعي والجهود المبذولة العديد من الإنجازات التي نعتز بها. هنا بعض من أبرز الإنجازات التي حققها المجلس:</p>
+          <ul>
+            <li>إطلاق حملات توعية تهدف إلى تحسين المشاركة المجتمعية وزيادة التفاعل.</li>
+            <li>تنظيم ورش عمل لتطوير المهارات الشخصية وتعزيز التواصل بين الأفراد.</li>
+            <li>تنظيم فعاليات ثقافية وفنية تساهم في تعزيز روح التعاون والابتكار.</li>
+            <li>إطلاق مشاريع تهدف إلى مساعدة الفئات المستحقة في المجتمع.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <ul>
+          <li><i class="fas fa-phone"></i> 0123456789</li>
+          <li><i class="fas fa-envelope"></i> alabrarpr.school@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> عنوان المدرسة</li>
+          <li><i class="fas fa-user-circle"></i>تصميم الطالب محمود محمد شمس</li>
+
+        </ul>
+      </div>
+
+      <div class="social-links">
+        <a href="https://linktr.ee/Abrarschools">مواقع التواصل الخاصه بنا</a>
+        <br><br>
+        <a href="#">تواصل معنا</a>
+        <br>
+
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>
